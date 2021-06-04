@@ -158,6 +158,7 @@ impl Build {
         }
 
         let os = match target {
+            "arm-bantha-linux-gnueabi" => "linux-armv4",
             "aarch64-apple-darwin" => "darwin64-arm64-cc",
             // Note that this, and all other android targets, aren't using the
             // `android64-aarch64` (or equivalent) builtin target. That
